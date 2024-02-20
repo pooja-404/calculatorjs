@@ -39,7 +39,8 @@ input {
     font-weight: 700;
     height: 60px;
 }
-.pt-10{
+
+.pt-10 {
     padding-top: 15px;
 }
 
@@ -57,6 +58,10 @@ input.number {
     cursor: pointer;
 }
 
+input.number:hover {
+    background-color: rgb(245, 210, 144);
+}
+
 input.opreator {
     border: none;
     outline: 0;
@@ -69,6 +74,11 @@ input.opreator {
     color: black;
     font-weight: bolder;
     cursor: pointer;
+}
+
+input.opreator:hover {
+    background-color: rgb(245, 210, 144);
+
 }
 
 .flex {

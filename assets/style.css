@@ -1,0 +1,132 @@
+.container {
+    max-width: 100;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.formstyle {
+    width: 300px;
+    height: 530px;
+    margin: auto;
+    border: 3px solid skyblue;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input {
+    width: 20px;
+    color: black;
+    border-radius: 5px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3px;
+    text-align: right;
+    flex: 1;
+    background-color: rgb(34, 224, 238);
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    height: 60px;
+}
+.pt-10{
+    padding-top: 15px;
+}
+
+input.number {
+    border: none;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(34, 224, 238);
+    margin: 2px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input.opreator {
+    border: none;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(34, 224, 238);
+    margin: 2px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* #cal {
+    border: 5px solid black;
+    border-radius: 9999px;
+    padding: 20px;
+    margin: auto;
+} */
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.from {
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 12px 6px gray;
+
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.backspace {
+    width: 100%;
+    border-radius: 999px;
+}
+
+.outline-0 {
+    outline: none !important;
+}
+
+input.opreator.equal {
+    width: 124px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.tab {
+    width: 260px;
+}

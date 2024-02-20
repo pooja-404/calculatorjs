@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<!-- Primary Meta Tags -->
+<title>Meta Tags — Preview, Edit and Generate</title>
+<meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+<meta name="description"
+    content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+<meta property="og:description"
+    content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+<meta property="og:image" content="https://i.ibb.co/jbLjqDg/Screenshot-2024-02-20-151747.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+<meta property="twitter:description"
+    content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+<meta property="twitter:image" content="https://i.ibb.co/jbLjqDg/Screenshot-2024-02-20-151747.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+<body>
+    <section class="min-h-screen flex justify-center items-center">
+        <div class="container">
+            <form id="data" name="form1" class="from">
+                <input id="cal" type="text" name="answer" class=" tab outline-0" readonly>
+               
+                <div class="flex pt-10">
+                    <input class="opreator" type="button" value="A/C" onclick="form1.answer.value = ' ' ">
+                    <input class="backspace opreator" type="button" value="dl"
+                        onclick="form1.answer.value = form1.answer.value.slice(0, -1)">
+                    <input class="opreator" type="button" value="/" onclick="addoperator('/')">
+                </div>
+                <div class="bar"></div>
+                <div class="flex ">
+                    <input class="number" type="button" value="1" onclick="form1.answer.value += '1' ">
+                    <input class="number" type="button" value="2" onclick="form1.answer.value += '2' ">
+                    <input class="number" type="button" value="3" onclick="form1.answer.value += '3' ">
+                    <input class="opreator" type="button" value="+" onclick="addoperator('+')">
+                </div>
+                <div class="flex">
+                    <input class="number" type="button" value="4" onclick="form1.answer.value += '4' ">
+                    <input class="number" type="button" value="5" onclick="form1.answer.value += '5' ">
+                    <input class="number" type="button" value="6" onclick="form1.answer.value += '6' ">
+                    <input class="opreator" type="button" value="-" onclick="addoperator('-')">
+                </div>
+                <div class="flex">
+                    <input class="number" type="button" value="7" onclick="form1.answer.value += '7' ">
+                    <input class="number" type="button" value="8" onclick="form1.answer.value += '8' ">
+                    <input class="number" type="button" value="9" onclick="form1.answer.value += '9' ">
+                    <input class="opreator" type="button" value="*" onclick="addoperator('*')">
+                </div>
+                <div class="flex">
+                    <input class="opreator" type="button" value="." onclick="addoperator('.')">
+                    <input class=" number" type="button" value="0" onclick="form1.answer.value += '0'">
+                    <input class="opreator equal" type="button" value="=" onclick="sum()">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        function addoperator(sign) {
+            const last = document.getElementById('cal').value.slice(-1);
+            const answers = document.getElementById('cal')
+
+            if (isNaN(last) && last !== ')') {
+                document.getElementById('cal').value = document.getElementById('cal').value.slice(0, -1) + sign;
+
+            }
+            else if (answers.value != '') {
+
+                document.getElementById('cal').value += sign;
+            }
+        }
+        function sum() {
+            const answers = document.getElementById('cal')
+            if (answers.value !== '') {
+                answers.value = eval(answers.value)
+            }
+        }
+    </script>
+</body>
+
+</html>
